@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>STG Browser Tools Brownbag Demo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link
+	href="http://cdn.jsdelivr.net/webjars/bootstrap/3.2.0/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/3.2.0/css/bootstrap.min.css}"
+	rel="stylesheet" media="screen" />
+<script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.1/jquery.min.js"
+	th:src="@{/webjars/jquery/2.1.1/jquery.min.js}"></script>
+<script type="text/javascript" src="./static/js/blah2.js"
+	th:src="@{/js/counter.js}"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Counter</h1>
+		<p class="Output">Output goes here!</p>
+
+		<div class="row">
+			<div class="col-md-4">
+				<button class="addCount">Add</button>
+				<button class="removeCount">Remove</button>
+			</div>
+		</div>
+		<div class="row col-md-4">
+			Use Server: <input type="checkbox" class="useServer" />
+		</div>
+	</div>
+</body>
+</html>
